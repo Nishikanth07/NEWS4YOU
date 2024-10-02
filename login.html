@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEWS4U</title>
+    <style>
+
+        #mainDiv{
+            background-color:black;
+            background: url(MAP.png);
+        }
+
+        .header{
+            display: flex;
+            height: 100px;
+            justify-content: space-between;
+        }
+
+        #earth{
+            height: 100px;
+            
+        }
+
+        #logo{
+            height: 100px;
+        }
+
+        #loginbox{
+            background-color: transparent ;
+            opacity: 100%;
+        
+            width: 13%;
+            border-radius: 15px;
+            margin-top: 30px;
+        }
+
+        #inp{
+            background-color:transparent;
+            border: 1px solid white;
+            border-radius: 5px;
+            height: 25px;
+            width: 150px;
+        }
+
+
+    </style>
+</head>
+<body id="mainDiv">
+    <div class="header">
+        <div>
+            <img id="logo" src="NEWS.png"/>
+        </div>
+        <div>
+            <h2 style="color: white;">"Your News, Your Perspective"
+            </h2>
+        </div>
+        <div>
+            <video id="earth" src="NEWS.mp4" autoplay loop muted></video>
+        </div>
+    </div>
+    <div id="login">
+        <center>
+            <div id="loginbox">
+                
+                <img id="onelinelogo" src="ONELINELOGO.png" style="height: 150px;margin-top: -10px;"/>
+
+              
+                <div style="border-radius: 10px;margin-top: -20px;">
+                    <input id="inp" type="text" placeholder="USERNAME" />
+                    <div id="ERROR1" style="color:red"></div>
+                </div>
+                
+                <div style="border-radius: 10px;margin-top: 20px;">
+                    <input type="password" id="inp" placeholder="PASSWORD"/>
+                    <div id="ERROR2" style="color:red"></div>
+                </div>
+                
+                <center>
+                    <div style="display: flex;margin-bottom: 25px; margin-top: 20px; margin-left: 50px;" >
+                        
+                            <button onclick="LOGIN()">
+                                SIGN UP
+                            </button>
+                        
+                    </div>
+                </center>
+                
+            </div>
+        </center>
+    </div>
+    <div id="footer">
+        <center>
+            <footer style="color: white;">@new4you.com</footer>
+        </center>
+    </div>
+
+    
+    
+
+    
+</body>
+</html>
